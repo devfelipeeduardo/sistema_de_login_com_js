@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --dark-red: rgb(180, 32, 111);
+    --purple: rgb(109, 16, 94);
+    --light-purple: rgb(244, 224, 240);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-structure {
+    background: var(--dark-red);
+    width: 1200px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 750px 450px;
+    /* grid-template-columns: 2fr 1fr; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.left-side {
+    background-color: var(--dark-red);
+    background-image: url('imgs/background-left-side.png');
+    background-position: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 230px;
+}
+
+.welcome-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0px 40px 0px 40px;
+}
+
+.left-side .welcome-box h1 {
+    color: var(--purple);
+    font-size: 5rem;
+}
+
+.left-side .welcome-box p {
+    color: var(--purple);
+    font-size: 1.8rem;
+}
+
+.right-side {
+    background-color: var(--purple);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h2 {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-input {
+    background-color: var(--light-purple);
+    border: none;
+    border-radius: 20px;
+    margin: 5px;
+    width: 300px;
+    height: 35px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    padding: 0px 15px 0px 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.login-input:focus {
+    outline: none;
+}
+
+.login-button {
+    width: 150px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--light-purple), var(--purple), var(--dark-red));
+    font-family: 'Roboto', sans-serif;
+    border: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
